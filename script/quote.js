@@ -8,4 +8,4 @@ function randomQuote() {
      Math.floor(Math.random()*quoteOfTheDay.length);
 }
 
-return `Your inspiration for the day; ${randomQuote[quoteOfTheDay]}`
+return `Your inspiration for the day: ${randomQuote[quoteOfTheDay]}`
