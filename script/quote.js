@@ -1,11 +1,28 @@
-const quoteOfTheDay = [
-    "Life is like a box of chocolates. You never know what you're gonna get", 
-    "You win some, you lose some, but you live to fight another day", 
-    "Heros are always remembered, but legends never die."
-];
+const randGen = array => Math.floor(Math.random() * array.length);
 
 function randomQuote() {
-     Math.floor(Math.random()*quoteOfTheDay.length);
+    const verbs = [
+        "jump",
+        "climb",
+        "bop it",
+        "drive",
+        "sit"
+    ];
+    const nouns = [
+        "granny",
+        "book",
+        "cookie",
+        "blanket",
+        "Utah"
+    ];
+    const pronouns = [
+        "he",
+        "she",
+        "they",
+        "them"
+    ];
+    return `You ${verbs[randGen(verbs)]} you say how 
+    ${nouns[randGen(nouns)]} then toss it to ${pronouns[randGen(pronouns)]}`
 }
 
-return `Your inspiration for the day: ${randomQuote[quoteOfTheDay]}`
+console.log(randomQuote());
